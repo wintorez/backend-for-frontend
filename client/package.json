@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --port 3000 --open",
-    "build": "tsc && vite build --outDir ../server/public"
+    "build": "tsc && vite build --outDir ../server/public --emptyOutDir"
   },
   "dependencies": {
     "@types/react": "^18.2.43",

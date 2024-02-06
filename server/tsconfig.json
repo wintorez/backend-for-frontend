@@ -1,24 +1,14 @@
 {
   "compilerOptions": {
+    "target": "ES2022",
     "module": "CommonJS",
-    "target": "ES2016",
-    "moduleResolution": "Node",
+    "strict": true,
     "esModuleInterop": true,
-    "sourceMap": true,
-    "outDir": "dist",
-    "allowJs": true,
-    "lib": ["DOM", "ES6"],
-    "baseUrl": "./src",
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",
+    "rootDir": "./src"
   },
-  "exclude": [
-    "node_modules",
-    "dist"
-  ],
-  "include": [
-    "src/**/*.ts",
-    "tests/**/*.spec.ts"
-  ],
-  "files": [
-    "src/index.ts"
-  ]
+  "include": ["./src/**/*.ts"],
+  "exclude": ["node_modules"]
 }
