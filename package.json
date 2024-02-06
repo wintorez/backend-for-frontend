@@ -1,0 +1,18 @@
+{
+    "name": "backend-for-frontend",
+    "version": "1.0.0",
+    "description": "An example of backend for frontend using Express, React, and TypeScript",
+    "workspaces": [
+        "client",
+        "server"
+    ],
+    "scripts": {
+        "dev": "concurrently \"npm run dev -w client\" \"npm run dev -w server\"",
+        "build": "concurrently \"npm run build -w client\" \"npm run build -w server\"",
+        "start": "npm run build && npm run start -w server"
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.2",
+        "prettier": "^3.2.5"
+    }
+}
